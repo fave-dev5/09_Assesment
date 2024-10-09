@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  /* width: min(100% - 9vw, 1900px); */
+  max-width: 1400px;
+  margin-inline: auto;
+  margin-bottom: 64px;
+  padding-top: 42px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 100;
+}
+
+header a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+
+header a:hover {
+  background-color: aliceblue;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+}
+.hero {
+  position: relative;
+}
+.hero span {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  margin-right: 8px;
+  opacity: 80%;
+}
+.hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 500;
+  font-size: 38px;
+}
+
+h3 {
+  border-bottom: 1px;
+}
+/* .img_container{ 
+    display: flex;
+} */
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.image-container > div {
+  position: relative;
+  width: 330px;
+}
+
+.image-container > div p {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+.section-header {
+  padding-bottom: 8px;
+  border-bottom: 1px solid gainsboro;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.about_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.about_container img{
+  filter: grayscale(100%);
+}
+
+.about_container > div {
+  width: 330px;
+}
+
+.about_container h3 {
+  font-size: x-large;
+  font-weight: 200;
+}
+.about_container h4 {
+  color: grey;
+  font-weight: 50;
+}
+.about_container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+.contact {
+  margin-bottom: 4px;
+}
+.contact input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  outline: solid 1px rgb(201, 193, 193);
+}
+
+.contact input:focus {
+  outline: solid 3px black;
+  border-radius: 4px;
+}
+.contact .buttn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+  footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+  }
